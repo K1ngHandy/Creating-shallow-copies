@@ -11,14 +11,20 @@
     Use the spread operator to make a shallow copy of the array into a variable called copyFruits. 
     Then, change the value of the second element of the copy array to ['pineapple'].
     */
-    //ENTER YOUR CODE HERE
+    let originalFruits = ['apple', ['orange', 'lemon']];
+    let copyFruits = [...originalFruits];
+    copyFruits[1] = ['pineapple'];
+    console.log(copyFruits);
      
     /* 
     PROBLEM 2: Declare an object called originalNums with the properties { a: { b: 2 } }. 
     Use the spread operator to make a shallow copy of the object into a variable called copyNums. 
     Then, change the value of the b property in the copy object to 3.
     */
-    //ENTER YOUR CODE HERE
+    let originalNums = { a: { b: 2 } };
+    let copyNums = {...originalNums};
+    copyNums.a.b = 3;
+    console.log(copyNums);
     
      /* 
     PROBLEM 3: Declare an array called originalMovies with the values 
