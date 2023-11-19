@@ -32,7 +32,10 @@
     Use the spread operator to make a shallow copy of the array into a variable called copyMovies. 
     Then, change the value of the first element of the copy array to 'The Godfather Part II'.
     */
-    //ENTER YOUR CODE HERE
+    let originalMovies = ['The Godfather', 'The Shawshank Redemption', 'The Dark Knight'];
+    let copyMovies = [...originalMovies];
+    copyMovies[0] = 'The Godfather Part II';
+    console.log(copyMovies);
 
     /* 
     PROBLEM 4: Declare an object called originalInfo with the properties 
