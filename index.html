@@ -43,7 +43,10 @@
     Use the spread operator to make a shallow copy of the object into a variable called copyInfo. 
     Then, change the value of the city property in the copy object to 'Los Angeles'.
     */
-    //ENTER YOUR CODE HERE
+    let originalInfo = { name: 'John', age: 30, address: { street: '123 Main St', city: 'New York' } };
+    let copyInfo = { ...originalInfo };
+    copyInfo.address.city = 'Los Angeles';
+    console.log(copyInfo);
 
     /* 
     PROBLEM 5 (DEBUGGING): The following code is supposed to change the value of the
